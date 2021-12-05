@@ -1,0 +1,86 @@
+[
+  {
+    "name": "LinkedIn Reaction Poll Generator",
+    "description": "Reactions increase the reach of a post on LinkedIn similar to what happens on every other social media platform. Because of this, something I call 'reaction polls' have become really popular as a growth hack. Instead of running a regular LinkedIn poll, which is frankly pretty jank and constrained to 4 options, you can have users react to your post to vote on the option they want, creating a much richer experience that also nets you the poster a bunch of free engagement. An example is attached here as a project resource. Right now, there's no tool to make the generation of these reaction polls easy. Currently people wanting to run a reaction poll need to create their own image. In this project we'll create a tool that does it for them.",
+    "skillLevel": "Experienced",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "SVG creation",
+      "No Backend",
+      "Frontend"
+    ],
+    "totalStoryPoints": 13,
+    "resources": ["linkedin_reaction.png"],
+    "ideaCredit": {
+      "source": "Alex Chiou",
+      "link": "https://github.com/Gear61/Software-Project-Ideas/blob/main/LinkedIn%20Reaction%20Poll%20Generator.md",
+      "linkToSource": "https://www.linkedin.com/in/alexander-chiou"
+    },
+    "stories": [
+      {
+        "name": "HTML and CSS for the page",
+        "description": "General page structure minus the Reaction component covered in the Reaction Component story",
+        "requirements": [
+          "Page title left of SVG",
+          "The SVG that we'll be dynamically generating is primarily displayed",
+          "Reaction components are positioned inline below the page title and SVG",
+          "Poll title label and input positioned below the Reaction Components, left justified",
+          "Download label and button positioned below the Reaction Components, right justified"
+        ],
+        "resources": ["linkedin_reaction_initial.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Reaction Component",
+        "description": "The component that holds the reaction image, checkbox, and input",
+        "requirements": [
+          "Dynamically display the five Reaction Components on the page instead of statically typing them out",
+          "When the user checks a Reaction Component checkbox that reaction is included in the SVG",
+          "As the user types in the Reaction Component label the value of the input is added to the SVG directly above the corresponding reaction",
+          "The user cannot type in an input unless the checkbox for that reaction is checked",
+          "If the user unchecks a Reaction Component then it is removed from the SVG"
+        ],
+        "resources": ["linkedin_reaction_ready.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "SVG creation",
+        "description": "The SVG is dynamically updated as the user interacts with the Reaction Components",
+        "requirements": [
+          "When the user checks a Reaction Component checkbox that reaction is included in the SVG",
+          "As the user types in the Reaction Component label the value of the input is added to the SVG directly above the corresponding reaction",
+          "When a reaction is added to the SVG draw an arrow from the reaction to it's label",
+          "The arrow is the same color (or a close match) as the reaction (ex. the arrow for the like reaction is blue)"
+        ],
+        "resources": ["linkedin_reaction_ready.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Poll title",
+        "description": "Adds the title of the poll to the SVG",
+        "requirements": [
+          "As the user types in the Poll title input the value of the input is added to the SVG centered and positioned at the top of the SVG"
+        ],
+        "resources": ["linkedin_reaction_ready.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Download",
+        "description": "The user can download the newly created SVG to their device",
+        "requirements": [
+          "When the user clicks the Download button the newly created SVG is downloaded to their device"
+        ],
+        "resources": ["linkedin_reaction_ready.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "main": "calculateProjectTotalStoryPoints.js",
+  "type": "module",
+  "scripts": {
+    "calculate": "node --experimental-json-modules calculateProjectTotalStoryPoints.js"
+  }
+}

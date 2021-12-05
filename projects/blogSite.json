@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Blog site",
+    "description": "Contains a list page, detail pages, and a contact form. Includes email provider integration.",
+    "skillLevel": "Junior",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Frontend",
+      "Backend",
+      "API",
+      "Email provider integration"
+    ],
+    "totalStoryPoints": 40,
+    "resources": ["blog_list.png"],
+    "stories": [
+      {
+        "name": "Sidebar",
+        "description": "Owner profile image, site name, tag line, and site navigation organized inside the left sidebar",
+        "requirements": [
+          "Owner profile image, site name, tag line, and site navigation appear in the left sidebar on all pages of the site",
+          "For blog list and contact me pages the corresponding site navigation has the arrow icon pointing to it"
+        ],
+        "resources": ["blog_list.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Blog list frontend",
+        "description": "Paginated list of blogs",
+        "requirements": [
+          "Three blog posts are displayed per page",
+          "The active page is underlined in the list pagination",
+          "Clicking on a different page navigates the user to that page"
+        ],
+        "resources": ["blog_list.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Blog details frontend",
+        "description": "displays an individual blog post",
+        "requirements": [
+          "If the user clicks on a blog post from the blog list they are navigated to that blogs details page",
+          "The url pattern for detail pages should be base-usl/:id with :id being the id of the blog post",
+          "Blog post data should be retained from the list page when navigating to the detail page from the list",
+          "When the details page is accessed not from the list page (ie. directly) the blog data should be retrieved from the API",
+          "Back to list button takes the user back to the blog list page"
+        ],
+        "resources": ["blog_details.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Contact me frontend",
+        "description": "Form allowing users to email the site owner",
+        "requirements": [
+          "Clicking the SEND button sends the form data to the API",
+          "Validations on form data are: subject and message are required, subject max length is 100 characters, message max length is 450 characters",
+          "Display helpful error messages to the user if they attempt to submit the form with errors"
+        ],
+        "resources": ["blog_contact_me.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile design",
+        "description": "On mobile devices the site follows the pattern shown in the attached resource",
+        "requirements": [
+          "The active site navigations should be underlined when on the blog list or contact me pages"
+        ],
+        "resources": ["blog_mobile.png"],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Blog list backend",
+        "description": "GET API endpoint that returns all blog posts",
+        "requirements": ["Returns all blog posts"],
+        "resources": ["blog_list.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Blog details backend",
+        "description": "GET API endpoint that returns an individual blog post given a blog id",
+        "requirements": [
+          "For a given blog id returns the one corresponding blog post"
+        ],
+        "resources": ["blog_details.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Contact me backend",
+        "description": "POST API endpoint that accepts form data and sends the site owner an email containing the form data utilizing an email provider",
+        "requirements": [
+          "Accepts form data from the Contact me frontend page",
+          "Validates form data using the same validation as the Contact me frontend story",
+          "Utilizes an email provider to send the site owner (yourself in this case) an email containing the form data"
+        ],
+        "resources": ["blog_contact_me.png"],
+        "storyPoints": 8,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

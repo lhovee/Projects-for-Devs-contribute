@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Project Portfolio",
+    "description": "This static website is designed to display the owner's projects. A home page features a slider displaying project overviews. The projects page lists the owner's projects, and finally the about page tells the user about the owner.",
+    "skillLevel": "Junior",
+    "tags": ["HTML", "CSS", "Javascript", "Frontend", "No backend"],
+    "totalStoryPoints": 12,
+    "resources": ["portfolio_home.png"],
+    "stories": [
+      {
+        "name": "Owner Image, name, and tag line",
+        "description": "The site header should always display the owner's image, name, and tag line.",
+        "requirements": [
+          "Image is circular",
+          "Left justify these in the header",
+          "Stack image over name over tag line"
+        ],
+        "resources": ["portfolio_header_owner.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Site navigation",
+        "description": "Pages include Home, Projects, About. Clicking on each navigates the user to that page",
+        "requirements": [
+          "Navigation appears in the header, right justified",
+          "The currently active route is underlined",
+          "Routes in the url should be /, /projects, /about respectively"
+        ],
+        "resources": ["portfolio_navigation.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Home page",
+        "description": "Consists of a slider with 9 images of various projects.",
+        "requirements": [
+          "The currently active slide corresponds to the pagination below the slider",
+          "Slider automatically cycles through images on a 5 second interval",
+          "Clicking the right and left arrows as well as pagination navigates the slider"
+        ],
+        "resources": ["portfolio_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Project page",
+        "description": "Lists three projects.",
+        "requirements": [
+          "Projects are displayed dynamically instead of hard coded",
+          "Display project image on the left, and project title and description stacked on the right"
+        ],
+        "resources": ["portfolio_projects.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "About page",
+        "description": "Static text tells the user about the site owner.",
+        "requirements": [
+          "Content should be long enough to cause the user to need to scroll in order to view all of it"
+        ],
+        "resources": ["portfolio_about.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile design",
+        "description": "Follows the pattern in the attached resources",
+        "requirements": [
+          "Menu icon replaces site navigation",
+          "Clicking on the menu icon opens the mobile menu navigation",
+          "Navigating or clicking the close icon closes the menu",
+          "The active route is blue instead of black",
+          "Header is sticky to the top of the page"
+        ],
+        "resources": [
+          "portfolio_mobile_menu.png",
+          "portfolio_mobile_no_menu.png"
+        ],
+        "storyPoints": 3,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

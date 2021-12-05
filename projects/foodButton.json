@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Food Button",
+    "description": "Help users figure out where to eat, quickly. It's true that there's a lot of apps that help you find restaurants, but most of them place the burden of choice on the user, providing a search bar and an arsenal of filter options. This project flips that dynamic, having the app choose a high-quality, open restaurant for the user. A use-case could be a friend group choosing a place to eat. None of them wants to force the decision on others, but this just leads to indecision. Delegating the decision to a quick app solves this.",
+    "skillLevel": "Experienced",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Mobile",
+      "iOS",
+      "Android",
+      "API call",
+      "No Backend",
+      "Frontend"
+    ],
+    "totalStoryPoints": 12,
+    "resources": ["food_button_suggestion.png"],
+    "ideaCredit": {
+      "source": "Alex Chiou",
+      "link": "https://github.com/Gear61/Software-Project-Ideas/blob/main/Food%20Button.md",
+      "linkToSource": "https://www.linkedin.com/in/alexander-chiou"
+    },
+    "stories": [
+      {
+        "name": "Initial state",
+        "description": "This story is for the initial state of the app or site (if completing the project for web) when the user opens it.",
+        "requirements": [
+          "The App name, Food Button!, is in the header",
+          "How To section in the body",
+          "Roll the Dice button centered at the bottom of the user's device"
+        ],
+        "resources": ["food_button.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "SPIKE: API selection",
+        "description": "Select a free API to use for the restaurant selection. Examples are Google Places, Yelp, and TripAdvisor.",
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "API call",
+        "description": "GET only one restaurant result that matches all the acceptance criteria. Acceptance criteria are: 1. At least 4 out of 5 stars, 2. within 5 miles and/or a 15 minute drive, and 3. restaurant won't close for 1 hour+.",
+        "requirements": [
+          "Randomly select a restaurant from the API's GET results that matches all of the acceptance criteria"
+        ],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Loading state",
+        "description": "When the user taps the Roll the Dice button display loading state.",
+        "requirements": [
+          "When the user clicks or taps the Roll the Dice button make the API call to the API you've chosen",
+          "Prior to initiating the API call remove the How To content and replace with a loading spinner",
+          "While in loading state the Roll the Dice button appears disabled and the user can't interact with it",
+          "If an error occurs remove the loading spinner and display an error message to the user (ex. 'Something went wrong')",
+          "On API call success, replace the loading spinner with the query results"
+        ],
+        "resources": ["food_button_loading.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "Restaraunt Suggestion",
+        "description": "Display the restaurant suggestion to the user",
+        "requirements": [
+          "The user can see the restaurant name, description, stars, mileage from the user's current position, general location, and an image. If the API you've chosen doesn't support some of this information than show as much as you can. Avoid displaying too much information and cluttering the UI.",
+          "Below the restaurant suggestion right justified is the Start Navigation button"
+        ],
+        "resources": ["food_button_suggestion.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "Start Navigation",
+        "description": "When the user taps or clicks the Start Navigation button they are forwarded to the Google Maps app with the destination pre-filled.",
+        "requirements": [
+          "When the user taps or clicks the Start Navigation button they are forwarded to the Google Maps app with the destination pre-filled"
+        ],
+        "resources": ["food_button_suggestion.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

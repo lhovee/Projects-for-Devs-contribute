@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Random Quote Machine",
+    "description": "Clicking a button loads a third party random quote.",
+    "skillLevel": "Junior",
+    "tags": ["HTML", "CSS", "Javascript", "API call"],
+    "totalStoryPoints": 3,
+    "resources": ["random_quote_machine.png"],
+    "stories": [
+      {
+        "name": "Build the page",
+        "description": "Build the front end for the random quote machine",
+        "requirements": [
+          "Use a high quality image as the background of the entire page",
+          "When the user clicks the button it should be replaced with a spinner",
+          "When the api call resolves the spinner should be replace by the button"
+        ],
+        "resources": ["random_quote_machine.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "API call",
+        "description": "On user click make an API call to https://quotes.rest/",
+        "requirements": [
+          "Include error handling, displaying errors via a toast",
+          "On success save the quote to state"
+        ],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Displaying the quote",
+        "description": "On success of the API call display the quote to the user",
+        "requirements": [
+          "Display the quote to the user below the Load Quote button",
+          "Since the page has an image background, ensure the test is displayed on a background for readability",
+          "The quote should transform and/or translate onto the page"
+        ],
+        "storyPoints": 1,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Cat Pix",
+    "description": "This one page website or mobile app provides the user with joy and peace by allowing them to scroll through random cat pictures.",
+    "skillLevel": "Junior",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "API call",
+      "Mobile",
+      "iOS",
+      "Android"
+    ],
+    "totalStoryPoints": 7,
+    "resources": ["cat_pix.png"],
+    "ideaCredit": {
+      "source": "Alex Chiou",
+      "link": "https://github.com/Gear61/Software-Project-Ideas/blob/main/Cat%20Pix.md",
+      "linkToSource": "https://www.linkedin.com/in/alexander-chiou"
+    },
+    "stories": [
+      {
+        "name": "HTML and CSS (or app layout and structure)",
+        "description": "Build out the look and feel of the website using HTML and CSS. If completing this project as a mobile app then build out the app layout and structure using the language of your choice.",
+        "requirements": [
+          "Site header is left justified",
+          "Images are square, ie. they have the same height and width",
+          "Image size or the number of images should change based on the user's screen width",
+          "Image aspect ratio is maintained and image is centered after any scaling/cropping",
+          "The user can scroll to view more images"
+        ],
+        "resources": ["cat_pix.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "API call",
+        "description": "Find a free API that will allow you to fetch random cat images and implement.",
+        "requirements": [
+          "Fetch anywhere between 12 and 100 cat images. Ensure the number doesn't result in an unacceptably long page load time (1-2 seconds max)",
+          "If the API you choose returns duplicate images filter out the duplicates"
+        ],
+        "resources": ["cat_pix.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile (web only)",
+        "description": "If completing this project for web, the mobile version of the app should follow the design attached.",
+        "requirements": [
+          "On mobile display fewer images per row in order to ensure they are still easily viewable"
+        ],
+        "resources": ["cat_pix_mobile.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

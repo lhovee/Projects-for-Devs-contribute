@@ -1,0 +1,299 @@
+[
+  {
+    "name": "Elephant Rentals",
+    "description": "This website allows the user to find and rent an elephant.",
+    "skillLevel": "Experienced",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Frontend",
+      "Backend",
+      "API",
+      "Stripe payment integration",
+      "Email integration"
+    ],
+    "totalStoryPoints": 101,
+    "resources": ["rental_home.png"],
+    "stories": [
+      {
+        "name": "Routes",
+        "description": "Setup the seven (7) routes included in the site",
+        "requirements": [
+          "Home page is the project root (/)",
+          "Browse (/rentals) is the list of rentals",
+          "How it Works (/how-it-works) is a static text page",
+          "Rental details page (/rentals/:id) is the details page for a specific elephant where :id is the id of the elephant",
+          "Cart (/cart) is where the user confirms what their rental includes and enters rental details",
+          "Congratulations (/congratulations) is where the user will be redirected on rental completion success",
+          "Provide feedback (/feedback/:id) where :id is the id of the elephant, is where the user can provide feedback on their rental experience by rating their elephant (/feedback/:id/:id...) if multiple"
+        ],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Site structure",
+        "description": "the basic structure for every page",
+        "requirements": [
+          "Header includes site name and the cart icon and appears on every page",
+          "Site navigation is directly beneath the site header and appears on every page",
+          "Page content is directly beneath the site navigation and is unique for each page"
+        ],
+        "resources": ["rental_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Site navigation",
+        "description": "the navigation to the main pages of the website",
+        "requirements": [
+          "Site navigation includes Browse, Home, and How it Works",
+          "Selecting one takes the user to that page",
+          "The corresponding navigation for the currently active page is highlighted",
+          "For pages that are not included in the site navigation (cart, rental details, congratulations, feedback), no navigation is highlighted"
+        ],
+        "resources": ["rental_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Home page frontend",
+        "description": "Includes a brief site overview and a list of three elephants featured for the week",
+        "requirements": [
+          "The list of featured elephants appears beneath the site overview",
+          "Selecting one of the elephants takes the user to that elephant's details page",
+          "The list of featured elephants is updated once a week to display the three elephants with the highest ratings",
+          "When the user hovers their mouse over one of the featured elephant cards the image of the elephant zooms in by 5 percent"
+        ],
+        "resources": ["rental_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Home page backend",
+        "description": "Endpoint to return the list of featured elephants",
+        "requirements": [
+          "GET endpoint that returns the three featured elephants"
+        ],
+        "resources": ["rental_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Browse page frontend",
+        "description": "Displays a list of all elephants and includes search, sort, and filter options",
+        "requirements": [
+          "Displays the complete list of elephants the user can rent (10)",
+          "Search, sort, and filter options appear as shown in the attached resource"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Browse page backend",
+        "description": "Endpoint to return the complete list of elephants (10)",
+        "requirements": [
+          "GET endpoint that returns the complete list of elephants the user can rent (10)"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Search functionality",
+        "description": "On the browse page the user can search for elephants by typing the elephants name",
+        "requirements": [
+          "As the user types the list of elephants is filtered for only those whose names include the input from the search"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Sort functionality",
+        "description": "On the browse page the user can sort the list of elephants",
+        "requirements": [
+          "The list of elephants is always sorted by the sort selection which is further informed by the Asc (Ascending) and Desc (Descending) selection",
+          "Sort options include: Ratings and Price"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Filter functionality",
+        "description": "On the browse page the user can filter the list of elephants",
+        "requirements": [
+          "When no filters are selected the list is unfiltered",
+          "As the user selects filters the list of elephants is filtered by that criteria",
+          "Filters include: Local, Available Tomorrow, Adult, Baby",
+          "The user can select multiple filters which are all applied to the list"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Reset functionality",
+        "description": "On the browse page the user can clear all search, sort and filter changes",
+        "requirements": [
+          "When the user clicks the Reset search/sort/filters button search is cleared, sort becomes Ratings/Asc, and all filters are removed"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Elephant list item",
+        "description": "Describes the elephant list item representing an individual elephant found on the browse page",
+        "requirements": [
+          "Each item displays an image of the elephant, their name, price to rent for a day, ratings, total number of ratings, and description",
+          "Description is truncated if it is too long to fit inside the list item",
+          "Ratings are an average of all of the ratings each elephant has received"
+        ],
+        "resources": ["rental_browse.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Scheduled Rentals - Backend Architecture dependent",
+        "description": "Determine how to solve the challenges of scheduled rentals, and then implement",
+        "requirements": [
+          "There needs to be a way to keep track of scheduled rentals, the use cases being 1. determining if an elephant is available tomorrow as that is a filter option 2. the operations arm of the elephant rentals company will need access to them"
+        ],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Ratings - Backend Architecture dependent",
+        "description": "Determine how to solve the challenges of ratings, and then implement",
+        "requirements": [
+          "There needs to be a way to keep track of all ratings for each elephant, the use cases being 1. displaying them in the frontend 2. providing a means to determine the three weekly featured elephants",
+          "Creating ratings will also be necessary (EDIT/DELETE will not be implemented)"
+        ],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Details page frontend",
+        "description": "Displays an individual elephant",
+        "requirements": [
+          "Displays an image of the elephant, their name, price to rent for a day, ratings, total number of ratings, Note about handler being included, and description",
+          "Clicking Add to Cart adds the elephant to the user's cart",
+          "Populate the details page with the data from the list page if the user navigates to the details page from the list page",
+          "If the user navigates to the details page directly or refreshes the page then get the detail page data from the backend using the id from the route/url"
+        ],
+        "resources": ["rental_details.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Details page backend",
+        "description": "Endpoint to return an individual elephant",
+        "requirements": [
+          "GET endpoint that returns an individual elephant for a given id"
+        ],
+        "resources": ["rental_details.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Cart icon",
+        "description": "Displays the number of items in the cart and provides access to the cart page",
+        "requirements": [
+          "Displays the number of items in the cart as a number within a red circle overlaying the cart icon",
+          "Clicking the cart icon takes the user to the cart page"
+        ],
+        "resources": ["rental_cart.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Cart page frontend",
+        "description": "The user can confirm what they're renting and enter scheduling and location information",
+        "requirements": [
+          "The Header with the cart icon includes the number of items in the cart",
+          "Displays the elephant list item component from the browse page for each elephant in the cart",
+          "Clicking the circular X on a rental item removes it from the cart",
+          "The user can fill out rental start/end date/time",
+          "The user can enter the address of the rental dropoff/pickup",
+          "The user can enter the point of contact's name, phone number, and email",
+          "Form validations: all fields are required, don't allow form submission without confirming validations",
+          "Start/End date inputs are calendar pickers",
+          "Start/End times are time pickers",
+          "Clicking Checkout forwards the user to a Stripe hosted payment page"
+        ],
+        "resources": ["rental_cart.png"],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Stripe integration",
+        "description": "When the user clicks Checkout from the cart page they are forwarded to a Stripe hosted payment page",
+        "requirements": [
+          "Integrate with Stripe",
+          "Leave the Stripe configuration on development or demo mode so that fake payment information can result in success",
+          "On payment success forward the user to the congratulations page (/congratulations)"
+        ],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Congratulations page",
+        "description": "After successfully completing payment on the Stripe hosted payment page they land on the congratulations page",
+        "requirements": [
+          "When the user lands on the congratulations page (ie. payment is successful) create their scheduled rental depending on the Backend Architecture approach decided on for Scheduled Rentals",
+          "The scheduled rental that is saved in the database should include the id(s) of the elephant(s) included in the rental, the start/end date/times, location information, and point of contact information"
+        ],
+        "resources": ["rental_congratulations.png"],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Email integration",
+        "description": "When the user's rental is complete send them an email with a link to provide feedback on their experience",
+        "requirements": [
+          "The email needs to include a link like (/feedback/:id) where id is the id of the elephant they rented (/feedback/:id/:id...) if multiple"
+        ],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "Feedback page frontend",
+        "description": "Where the user can provide feedback on their experience",
+        "requirements": [
+          "Displays the browse list item component of the elephant(s) the user rented",
+          "Make an API call to the backend to retrieve the elephant(s) data using the id(s) in the url",
+          "User can click on the star component to select the rating they wish to give",
+          "Clicking Submit save the rating in the backend based on the Backend Architecture decided on for Ratings",
+          "Upon success of the Submit API call forward the user to the Home page"
+        ],
+        "resources": ["rental_review.png"],
+        "storyPoints": 8,
+        "state": "TODO"
+      },
+      {
+        "name": "How it Works page",
+        "description": "Build the static page",
+        "requirements": [
+          "Displays a static page matching the attached resource"
+        ],
+        "resources": ["rental_how_it_works.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile design",
+        "description": "UI/UX for the application on mobile devices",
+        "requirements": [
+          "On mobile devices the application should match the design pattern in the attached resource"
+        ],
+        "resources": ["rental_mobile.png"],
+        "storyPoints": 8,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

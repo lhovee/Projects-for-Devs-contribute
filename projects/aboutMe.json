@@ -1,0 +1,34 @@
+[
+  {
+    "name": "About me",
+    "description": "A simple, one page, introduction to the owner",
+    "skillLevel": "Junior",
+    "tags": ["HTML", "CSS", "No javascript", "No backend"],
+    "totalStoryPoints": 2,
+    "resources": ["about_me.png"],
+    "stories": [
+      {
+        "name": "HTML and CSS",
+        "description": "Code the HTML and CSS for the page.",
+        "requirements": [
+          "Center the header",
+          "The header should be sticky to the top of the page while the user scrolls content below"
+        ],
+        "resources": ["about_me.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile design",
+        "description": "On mobile the site follows the pattern in the attached resource.",
+        "requirements": [
+          "Images are scaled down or smaller images are used on mobile. Images should not be cropped or cut."
+        ],
+        "resources": ["about_me_mobile.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

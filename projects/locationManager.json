@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Location Manager",
+    "description": "I want to be able to figure save where I am as a location of interest, so I can quickly access it later. It's inspired by a use-case I had in Taiwan (I'm Taiwanese, so I'll regularly go back to visit my family). Anyways, I walked out of our Airbnb and realized I didn't have the address saved. I didn't book the Airbnb or have the Airbnb app, so it was hard to find, and using Google Maps isn't great as saving your current location is a hard to find feature that takes several clicks (Google Maps's UI is also very crowded in general). I eventually figured out how to do this in Google Maps, but even after saving the location, saved locations are not a first class citizen in Google Maps, so it's hard returning to them.",
+    "skillLevel": "Experienced",
+    "tags": ["Mobile", "API calls", "Backend", "API", "iOS", "Android"],
+    "totalStoryPoints": 21,
+    "resources": ["location_manager_home.png"],
+    "ideaCredit": {
+      "source": "Alex Chiou",
+      "link": "https://github.com/Gear61/Software-Project-Ideas/blob/main/Simple%20Location%20Saver.md",
+      "linkToSource": "https://www.linkedin.com/in/alexander-chiou"
+    },
+    "stories": [
+      {
+        "name": "App structure",
+        "description": "The app consists of four (4) pages. Build out the app structure by stubbing out each.",
+        "requirements": [
+          "Home page includes site navigation in the header, map, and Save Current Location Button (the black plus button)",
+          "Save Current Location page",
+          "Saved Locations page",
+          "Search page"
+        ],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Home Page",
+        "description": "Displays the user's current location on the map and provides navigation access to the rest of the app.",
+        "requirements": [
+          "The user's current locations is displayed with an icon which is centered on the map",
+          "Tapping the Saved Locations button in the header navigates to the Saved Locations page",
+          "Tapping the Search button navigates the user to the Search page",
+          "Tapping the Save Current Location button (black plus button) navigates the user to the Save Current Location page"
+        ],
+        "resources": ["location_manager_home.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Save Current Location",
+        "description": "When the user taps the Save Current Location button (black plus button on the home page), they can save their current location",
+        "requirements": [
+          "Allow the user to enter a name for their current location",
+          "Do not allow the location to be saved until a name is entered (ie. Name is required)",
+          "When the user taps the Save button from the Save Current Location page the location is saved and the user is routed to the Saved Locations page",
+          "The newly saved location is visible in the list of saved locations"
+        ],
+        "resources": ["location_manager_save_current_location.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      },
+      {
+        "name": "Saved Locations",
+        "description": "This page displays the user's saved locations and they can navigate to them",
+        "requirements": [
+          "Saved locations are displayed",
+          "Tapping the Travel To button navigates the user to the home page displaying the route to the location they selected from their current location"
+        ],
+        "resources": [
+          "location_manager_saved_locations.png",
+          "location_manager_travel_to.png"
+        ],
+        "storyPoints": 5,
+        "state": "TODO"
+      },
+      {
+        "name": "Search Page",
+        "description": "The user can search for named places.",
+        "requirements": [
+          "As the user types provide autocomplete place options for the user to select from",
+          "When the user selects a place the dropdown is removed and the place they selected is displayed",
+          "Tapping the Save button saves the place to the user's saved places and navigates the user to the Saved Places page",
+          "The newly saved location is visible in the list of saved locations",
+          "The name of the newly saved location defaults to the name of the place supplied by the API"
+        ],
+        "resources": [
+          "location_manager_empty.png",
+          "location_manager_searching.png",
+          "location_manager_search_selected.png"
+        ],
+        "storyPoints": 5,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

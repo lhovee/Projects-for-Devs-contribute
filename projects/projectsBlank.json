@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Blank",
+    "description": "",
+    "skillLevel": "Junior",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "totalStoryPoints": 5,
+    "resources": ["porfolio_home.png"],
+    "ideaCredit": {
+      "source": "your name here!",
+      "link": "link to your profile (LinkedIn maybe?)",
+      "linkToSource": "OPTIONAL: link to original project idea if you have it hosted somewhere"
+    },
+    "stories": [
+      {
+        "name": "first story",
+        "description": "this story will be better defined later",
+        "requirements": ["view the page title", "view an image"],
+        "resources": ["image1.png"],
+        "storyPoints": 3,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]
