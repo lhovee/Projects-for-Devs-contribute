@@ -10,7 +10,7 @@
       "Frontend",
       "Backend",
       "API",
-      "Email provider integration"
+      "Email integration"
     ],
     "totalStoryPoints": 40,
     "resources": ["blog_list.png"],

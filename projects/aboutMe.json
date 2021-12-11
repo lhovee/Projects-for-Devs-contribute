@@ -3,7 +3,7 @@
     "name": "About me",
     "description": "A simple, one page, introduction to the owner",
     "skillLevel": "Junior",
-    "tags": ["HTML", "CSS", "No javascript", "No backend"],
+    "tags": ["HTML", "CSS", "No javascript", "No Backend"],
     "totalStoryPoints": 2,
     "resources": ["about_me.png"],
     "stories": [

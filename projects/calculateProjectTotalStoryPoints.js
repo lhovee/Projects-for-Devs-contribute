@@ -7,6 +7,7 @@ import locationManager from "./locationManager.json";
 import projectPortfolio from "./projectPortfolio.json";
 import randomQuoteMachine from "./randomQuoteMachine.json";
 import rental from "./rental.json";
+import techCareerGrowthNavigator from "./techCareerGrowthNavigator.json";
 
 const projects = [
   aboutMe,
@@ -18,6 +19,7 @@ const projects = [
   projectPortfolio,
   randomQuoteMachine,
   rental,
+  techCareerGrowthNavigator,
 ];
 
 function calculateProjectTotalStoryPoints(projects) {

@@ -1,0 +1,196 @@
+[
+  {
+    "name": "Tech Career Growth Navigator",
+    "description": "Tech Career Growth is a community that supports software developers. They have a lot of resources but maintaining a repository of those resources has been a challenge. This project serves to help them and the people they support by building a better medium for their resources to be found. As the user interacts with the page resources matching their results are returned.",
+    "skillLevel": "Junior",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "totalStoryPoints": 19,
+    "resources": ["tech_career_growth_navigator.png"],
+    "ideaCredit": {
+      "source": "Alex Chiou",
+      "link": "https://github.com/Gear61/Software-Project-Ideas/blob/main/Tech%20Career%20Growth%20Navigator.md",
+      "linkToSource": "https://www.linkedin.com/in/alexander-chiou"
+    },
+    "stories": [
+      {
+        "name": "Routes",
+        "description": "There are two routes, 1. Navigator (/navigator) and 2. About (/about)",
+        "requirements": ["Setup the site routes"],
+        "resources": ["tech_career_growth_navigator.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Site Header",
+        "description": "The site header includes the Tech Career Growth logo, the site title, and navigation",
+        "requirements": [
+          "The site header appears on both pages of the site",
+          "The active link has a green background color (ex. when the user is on the About page the About navigation button has a green background)",
+          "Clicking on the site navigation buttons (Navigator and About) take the user to that page"
+        ],
+        "resources": ["tech_career_growth_navigator.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Navigator page",
+        "description": "This page features a brief description and then the inputs for the user to interact with.",
+        "requirements": [
+          "Brief blurb about the Tech Career Growth Navigator",
+          "Radio inputs for each of the following: Improving my resume, Interviewing, Moving up the career ladder, Productivity, Building projects, General growth and learning"
+        ],
+        "resources": ["tech_career_growth_navigator.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Improving my resume",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How To Write An Effective Software Engineering Resume (Medium Article), link: https://chioualexander.medium.com/how-to-write-an-effective-software-engineering-resume-e42713a7a2ca?sk=a5da48df741ae973bf1389f42d6948db",
+          "Title: How To Write A Stellar Tech Resume That Gets Your More Job Opportunities (Session Slides), link: https://docs.google.com/presentation/d/15eLqE_WmePLA--lYTG0ZJVcHhpEld2qNTck_w0t_E9k/",
+          "Title: Why You Should Be BORING With Your Tech Resume (YouTube Video), link: https://www.youtube.com/watch?v=MByD2CTwfmM&list=PL7NYbSE8uaBCq2fkG2zlFKvWJcvUL2MkJ&index=1",
+          "Title: THIS Is Why Your Resume Is Bad [Telling vs. Showing] (YouTube Video), link: https://www.youtube.com/watch?v=sDbK84GEE94&list=PL7NYbSE8uaBCq2fkG2zlFKvWJcvUL2MkJ&index=2",
+          "Title: How To SUPERCHARGE Your Software Engineer Resume (YouTube Video), link: https://www.youtube.com/watch?v=9Wb-gHEO9ug&list=PL7NYbSE8uaBCq2fkG2zlFKvWJcvUL2MkJ&index=3",
+          "Title: My Resume As A UCLA Student Which Got Me My First Software Engineering Job (LinkedIn Post), link: https://www.linkedin.com/feed/update/urn:li:activity:6837074290295349248/",
+          "Title: My Resume After Facebook (LinkedIn Post), link: https://www.linkedin.com/feed/update/urn:li:activity:6818382738102591488/"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing",
+        "description": "When the user selects this input a second question with a second set of inputs is presented to the user",
+        "requirements": [
+          "When the user selects the Interviewing input display this question: What part of the interview are you struggling with?",
+          "The second set of inputs below the question includ: Data structures and algorithms, Behvioral, System design, Nerves and anxiety, Studying in general"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing -> Data structures and algorithms",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How To Ace Your Software Engineering Interview [Part 1] - Algorithms and Data Structures (Medium Article), link: https://chioualexander.medium.com/how-to-ace-your-software-engineering-interview-part-1-algorithms-and-data-structures-1b2accf115c",
+          "Title: This is How You Properly Learn Data Structures and Algorithms (YouTube Video), link: https://www.youtube.com/watch?v=j9FD_Y5JTbw&list=PL7NYbSE8uaBDEXmgcdfyqY7sJ9wkf4W7q",
+          "Title: How To Truly Master A Data Structures & Algorithms Problem - 2 Sum Example (YouTube Video), link: https://www.youtube.com/watch?v=tfqPGGdS8Tk&list=PL7NYbSE8uaBDEXmgcdfyqY7sJ9wkf4W7q&index=4",
+          "Title: How To Ace Your Big Tech Interview — Data Structures & Algorithms (Session Slides), link: https://docs.google.com/presentation/d/13uLUHDvZifjp2aVClGsW29nfuVpQYvrkGLP8cej0R_k/edit?usp=sharing"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing -> Behavioral",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How To Ace Your Software Engineering Interview [Part 2] - Behavioral Questions (Medium Article), link: https://chioualexander.medium.com/how-to-ace-your-software-engineering-interview-part-2-behavioral-questions-a56e916cf834?sk=7171376e9d92d14e8d5eb0128488e33f"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing -> System design",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How To Ace Your Software Engineering Interview [Part 3] - System Design Questions (Medium Article), link: https://chioualexander.medium.com/how-to-ace-your-software-engineering-interview-part-3-system-design-questions-d581bedcaf6a"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing -> Nerves and anxiety",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How To Ace Your Software Engineering Interview [Part 4]- The Mental Game (Medium Article), link: https://chioualexander.medium.com/how-to-ace-your-software-engineering-interview-part-4-the-mental-game-3a53c9d9cbfa?sk=09708ef488fb966cba881083fe8fccce",
+          "Title: How To Mentally Prepare For Your Tech Interview (YouTube Video), link: https://www.youtube.com/watch?v=LSLyly2GJo4",
+          "Title: How To Have The Proper Mindset In Big Tech Software Engineering Interviews (YouTube Video), link: https://www.youtube.com/watch?v=guxFTl_qIRg"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Interviewing -> Studying in general",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: Step-By-Step Guide To Prepare For Any Software Engineering Interview (Medium Article), link: https://chioualexander.medium.com/step-by-step-guide-to-prepare-for-any-software-engineering-interview-7a629b8a1d54?sk=ce0aef80205923bb982d0b27b50c84e8",
+          "Title: How To Study For A Software Engineering Interview (Medium Article), link: https://chioualexander.medium.com/how-to-prepare-for-a-software-engineering-interview-4c77f173bae0?sk=bdc3b8a4401641464fdd89c14f0fad8c"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Productivity",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: Achieve More with Conscious Time Management (LinkedIn Article), link: https://www.linkedin.com/pulse/achieve-more-conscious-time-management-rahul-pandey/",
+          "Title: 5 Common Traps Junior Developers Fall Into And How To Avoid Them (Medium Article), link: https://chioualexander.medium.com/5-common-traps-junior-developers-fall-into-and-how-to-avoid-them-99f36861bfba?sk=2f7e20ffb7e82f6446f223ab62e87e9a",
+          "Title: How To Stop Procrastinating (YouTube Video), link: https://www.youtube.com/watch?v=64EnzHsQTMo",
+          "Title: How to Balance Your Time Between Your Job And Self Learning (YouTube Video), link: https://www.youtube.com/watch?v=qHYh_fiWH2Y"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Building projects",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: How I Built Apps With Over 2 Million Downloads [Part 1] - Choosing An Idea (Medium Article), link: https://chioualexander.medium.com/how-i-built-apps-with-over-1-million-downloads-part-1-choosing-ideas-725319d7332b?sk=b63d74520e1d34d3ae5dc99b1deeb067",
+          "Title: How I Built Apps With Over 2 Million Downloads [Part 2] - Building The Product (Medium Article), link: https://blog.prototypr.io/how-i-built-apps-with-over-1-million-downloads-part-2-building-the-product-7c6f6585022f?sk=d05364eacb3a0e655ca6d3600ebdae57",
+          "Title: How I Built Apps With Over 2 Million Downloads [Part 3] - Growing The Product (Medium Article), link: https://chioualexander.medium.com/how-i-built-apps-with-over-1-million-downloads-part-3-growing-the-product-d8a4fdbfdcd3?sk=5a0b498d47c727f67a9bb68f1e1bfadb",
+          "Title: How I Built Apps With Over 2 Million Downloads [Part 4] - Android Tips and Tricks (Medium Article), link: https://chioualexander.medium.com/how-i-built-apps-with-over-1-million-downloads-part-4-android-tips-and-tricks-7a2ec229d7ac?sk=3503d1760bb2e22b7f8c857e9f383882",
+          "Title: How To Identify Great Product Ideas That Help People (YouTube Video), link: https://www.youtube.com/watch?v=-SelDun0MZI&list=PL7NYbSE8uaBBGwuVwA_JHp4E-qhMqDALd&index=2",
+          "Title: How To Build Apps With 100k+ Users: Feasibility vs. Excitement (YouTube Video), link: https://www.youtube.com/watch?v=6vDwkELh4CQ&list=PL7NYbSE8uaBBGwuVwA_JHp4E-qhMqDALd&index=3",
+          "Title: How To Identify 100k+ Users App Ideas You Can Actually Build - Good Idea vs. Bad Idea (YouTube Video), link: https://www.youtube.com/watch?v=k_jPKGKMojI&list=PL7NYbSE8uaBBGwuVwA_JHp4E-qhMqDALd&index=4",
+          "Title: You Need To Walk Before You Can Run (Medium Article), link: https://chioualexander.medium.com/you-need-to-walk-before-you-can-run-2b6ac23f0535?sk=277148f1299e76a7fdca4df6ddef698f",
+          "Title: How To Build An Amazing Product - Do Just 1 Thing (YouTube Video), link: https://www.youtube.com/watch?v=voUyG75SMLw"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "General Growth and Learning",
+        "description": "When the user selects this input provide the resources listed in the requirements",
+        "requirements": [
+          "Title: 5 Things I Wish I Knew About Promotion as an Engineer (LinkedIn Article), link: https://www.linkedin.com/pulse/5-things-i-wish-knew-promotion-engineer-rahul-pandey/",
+          "Title: How To Learn Optimally As A Junior Engineer — Breadth vs. Depth (YouTube Video), link: https://www.youtube.com/watch?v=Pn-LWb_FoOQ",
+          "Title: The #1 Mistake Companies Make With Their Software Engineers (Medium Article), link: https://chioualexander.medium.com/the-1-mistake-companies-make-with-their-software-engineers-2c1fdbf6fbbe?sk=a736bba666f4780fc4332139ac2eb585",
+          "Title: The BEST Way To Learn As A Software Engineer (YouTube Video), link: https://www.youtube.com/watch?v=Ciu8zwOr8PU"
+        ],
+        "resources": ["tech_career_growth_navigator_selection.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "About page",
+        "description": "The about page consists of static content describing the Tech Career Growth community.",
+        "requirements": [
+          "You can find the content on the Tech Career Growth LinkedIn About page here https://www.linkedin.com/company/techcareergrowth/about/"
+        ],
+        "resources": ["tech_career_growth_navigator_about.png"],
+        "storyPoints": 1,
+        "state": "TODO"
+      },
+      {
+        "name": "Mobile design",
+        "description": "How the site should look on mobile devices",
+        "requirements": [
+          "On mobile devices the site should follow the design pattern found in the attached resource"
+        ],
+        "resources": ["tech_career_growth_navigator_mobile.png"],
+        "storyPoints": 2,
+        "state": "TODO"
+      }
+    ],
+    "githubId": "common"
+  }
+]

@@ -3,7 +3,7 @@
     "name": "Project Portfolio",
     "description": "This static website is designed to display the owner's projects. A home page features a slider displaying project overviews. The projects page lists the owner's projects, and finally the about page tells the user about the owner.",
     "skillLevel": "Junior",
-    "tags": ["HTML", "CSS", "Javascript", "Frontend", "No backend"],
+    "tags": ["HTML", "CSS", "Javascript", "Frontend", "No Backend"],
     "totalStoryPoints": 12,
     "resources": ["portfolio_home.png"],
     "stories": [

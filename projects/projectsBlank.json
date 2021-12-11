@@ -7,9 +7,9 @@
     "totalStoryPoints": 5,
     "resources": ["porfolio_home.png"],
     "ideaCredit": {
-      "source": "your name here!",
-      "link": "link to your profile (LinkedIn maybe?)",
-      "linkToSource": "OPTIONAL: link to original project idea if you have it hosted somewhere"
+      "source": "person contributing the project idea",
+      "link": "link to the project idea if it is hosted",
+      "linkToSource": "link to contributor's profile page"
     },
     "stories": [
       {
